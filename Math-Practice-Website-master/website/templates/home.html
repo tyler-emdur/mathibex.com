@@ -1,0 +1,43 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %}
+{% block content %}
+<center> 
+    <h1>Lorem ipsum</h1> 
+    <h2 style="color:rgb(0, 0, 0);">What would you like to work on today?</h2> 
+</center> 
+<!--bottons for modes-->
+<center> 
+<style>
+    .button {
+      border-radius: 25px;
+      border: 10px; 
+      border-color: black;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 32px;
+      cursor: pointer; 
+      width: 46%;
+      height: 200px; 
+      padding: 10px; 
+      background-image: linear-gradient(to bottom, rgb(219, 219, 219) 0%, rgb(219, 219, 219) 100%), linear-gradient(to bottom, rgb(44, 44, 44) 0%, rgb(44,44,44) 90%);
+      background-clip: content-box, padding-box;
+    }
+
+    .button:hover{
+      background: rgb(128,128,128);
+    }
+    
+
+</style>
+     <button class="button button1" onclick="window.location.href='/addition';">Addition</button>
+    <button class="button button2" onclick="window.location.href='/subtraction';">Subtraction</button> 
+    <h6></h6>
+    <button class="button button3" onclick="window.location.href='/multiplication';">Multipliaction</button>
+    <button class="button button4" onclick="window.location.href='/division';">Division</button>     
+<h2 style="color:rgb(0, 0, 0);">Or, combine everything you have leanred</h2>    
+<button class="button button5" onclick="window.location.href='/mental_math';">Mental Math</button>
+<button class="button button6" onclick="window.location.href='/simple_algebra';">Simple Algebra</button>  
+</center> 
+
+{% endblock %}
