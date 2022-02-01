@@ -4,7 +4,8 @@ views = Blueprint('views', __name__)
 
 @views.route('/')
 def home():
-    return render_template("home.html")
+    return render_template("home.html") 
+#Tyler and Ian were here
 
 @views.route('/coming_soon')
 def comingSoon():
@@ -32,4 +33,9 @@ def mental_math():
      
 @views.route('/simple_algebra')
 def simple_algebra():
-    return render_template("simple_algebra.html")
+    return render_template("simple_algebra.html")  
+ 
+@views.route('/leaderboard')
+def leaderboard():
+    return render_template("leaderboard.html") 
+#these are all of the chideren
