@@ -1,4 +1,20 @@
 from flask import Blueprint, render_template
+from flask import request
+import json
+import os
+
+def open_file(name, mode="r", data=None):
+    script_dir = os.path.dirname(__file__)
+    file_path = os.path.join(script_dir, name)
+
+    if mode == "r":
+        with open(file_path, mode, encoding='utf-8') as f:
+            data = json.load(f)
+            return data
+
+    elif mode == "w":
+        with open(file_path, mode, encoding='utf-8') as f:
+            json.dump(data, f)
 
 views = Blueprint('views', __name__)
 
@@ -29,13 +45,19 @@ def division():
      
 @views.route('/mental_math')
 def mental_math():
-    return render_template("mental_math.html") 
+    return render_template("mental_math.html")
+    
      
-@views.route('/simple_algebra')
-def simple_algebra():
-    return render_template("simple_algebra.html")  
+@views.route('/two_step_equations')
+def two_step_equations():
+    return render_template("two_step_equations.html")  
  
 @views.route('/leaderboard')
 def leaderboard():
-    return render_template("leaderboard.html") 
+    return render_template("leaderboard.html")  
+
+@views.route('/login')
+def login():
+    return render_template("coming_soon.html")
+
 #these are all of the chideren
