@@ -1,5 +1,16 @@
-{% extends "base.html" %} {% block title %}Home{% endblock %}
-{% block content %}
+<span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" id="home" href="/">Home</a>
+          <a class="nav-item nav-link" id="logout" href="/coming_soon">Logout</a>
+          <a class="nav-item nav-link" id="login" href="/login">Login</a>
+          <a class="nav-item nav-link" id="signUp" href="/coming_soon">Sign Up</a> 
+          <!--<a class="nav-item nav-link" id="leaderboard" href="/leaderboard">Leaderboard</a>-->
+        </div>
+      </div>
+    </nav>
+    <title>Home</title>
 <center> 
     <h4></h4>
     <h1 style="color: rgb(	126, 221, 210)" id = "poopy">Math Ibex</h1>
@@ -43,6 +54,5 @@
 <h6></h6> 
 <button class="button button5" onclick="window.location.href='/mental_math';"style="margin: 5px;"><b>Mental Math</b></button>
 <button class="button button6" onclick="window.location.href='/two_step_equations';"style="margin: 5px;"><b>Two Step Equations</b></button>  
+<body style="background-color:rgb(88, 88, 88);"></body>
 </center> 
-
-{% endblock %}
