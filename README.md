@@ -1,5 +1,5 @@
 # Math-Practice-Website
-Hello, this is Math Ibex. I wanted to make this website to make an easier UI for kids.
+Hello, this is Math Ibex. I wanted to make this website to make an easier UI for kids to practice math.
 
 To run website open up terminal an first run `Git clone https://github.com/some0ne14/Math-Ibex.git`
 
