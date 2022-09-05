@@ -5,9 +5,9 @@ To run website open up terminal an first run `Git clone https://github.com/some0
 
 Go into the folder by running `cd Math-Ibex`
 
-Then run `pip install requirements.txt`
+Then go into the sub folder by running `cd Math-Ibex` again
 
-Then go into the sub folder by running `cd Math-Ibex`
+Then run `pip install requirements.txt`
 
 Finally run `python3 main.py`
 
