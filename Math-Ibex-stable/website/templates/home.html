@@ -1,0 +1,49 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %}
+{% block content %}
+
+<center> 
+    <h4></h4>
+    <h1 style="color: rgb(	62, 227, 255)" id = "poopy">Math Ibex</h1>
+    <style>
+    #poopy
+    {
+      font-size: 75px;
+    }
+    </style>
+
+</center> 
+<!--bottons for modes-->
+<center> 
+<style>
+    .button {
+      border-radius: 100px;
+      border: 4px solid rgb(	62, 227, 255);
+      padding: 40px; 
+      width: 500px;
+      height: 200px; 
+      background-color: rgb(88, 88, 88); 
+      color: rgb(255, 255, 255);
+    } 
+    .button {
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 30px;
+    }
+    .button:hover {
+      background-color: rgb(156, 156, 156);
+    }
+    
+
+</style>
+<button class="button button1" onclick="window.location.href='/addition';"style="margin: 5px;"><b>Addition</b></button>
+<button class="button button2" onclick="window.location.href='/subtraction';"style="margin: 5px;"><b>Subtraction</b></button> 
+<h6></h6>
+<button class="button button3" onclick="window.location.href='/multiplication';"style="margin: 5px;"><b>Multiplication</b></but7ton>
+<button class="button button4" onclick="window.location.href='/division';"style="margin: 5px;"><b>Division</b></button>    
+<h6></h6> 
+<button class="button button5" onclick="window.location.href='/mental_math';"style="margin: 5px;"><b>Mental Math</b></button>
+<button class="button button6" onclick="window.location.href='/two_step_equations';"style="margin: 5px;"><b>Two Step Equations</b></button>  
+</center> 
+
+{% endblock %}
