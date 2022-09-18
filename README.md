@@ -3,7 +3,7 @@ Hello, this is Math Ibex. I wanted to make this website to make an easier UI for
 
 To run website open up terminal an first run `Git clone https://github.com/some0ne14/Math-Ibex.git`
 
-Go into the folder by running `cd Math-Ibex`
+Go into the folder by running `cd Math-Ibex-stable`
 
 Then go into the sub folder by running `cd Math-Ibex` again
 
